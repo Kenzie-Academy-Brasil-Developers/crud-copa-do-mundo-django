@@ -167,6 +167,7 @@ class TeamViewsTest(APITestCase):
 
         expected = {"message": "Team not found"}
         result = response.json()
+        print(result)
         msg = "Verifique se a mensagem de DELETE com id inválido está correta"
         self.assertDictEqual(expected, result, msg)
 
@@ -184,6 +185,7 @@ class TeamViewsTest(APITestCase):
 
         expected = {"message": "Team not found"}
         result = response.json()
+        print(result)
         msg = "Verifique se a mensagem de PATCH com id inválido está correta"
         self.assertDictEqual(expected, result, msg)
 
@@ -201,5 +203,6 @@ class TeamViewsTest(APITestCase):
 
         expected = {"message": "Team not found"}
         result = response.json()
+        print(result)
         msg = "Verifique se a mensagem de GET com id inválido está correta"
         self.assertDictEqual(expected, result, msg)
